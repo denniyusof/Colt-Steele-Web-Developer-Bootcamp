@@ -2,22 +2,46 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
 }
 
 #container {
   background-color: #003049;
   width: 90%;
-  height: 500px;
+  /* height: 500px; */
   margin: 0 auto;
   border: 5px solid #003049;
 
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 #container div {
   width: 200px;
   height: 200px;
+  flex-basis: 600px;
+}
+
+main {
+  width: 80%;
+  height: 500px;
+  margin-inline: auto;
+  border: 5px solid #111;
+  display: flex;
+}
+
+main .sidebar {
+  background-color: #6930c3;
+  border: 2px solid #fff;
+  flex-grow: 1;
+  flex-basis: 300px;
+}
+
+main .maincontent {
+  background-color: #80ffdb;
+  flex-grow: 2;
+  flex-basis: 800px;
 }
